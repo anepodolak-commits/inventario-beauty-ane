@@ -21,5 +21,4 @@ jobs:
           curl --fail --silent --show-error \
             --max-time 30 \
             -H "apikey: $SUPABASE_ANON_KEY" \
-            -H "Authorization: Bearer $SUPABASE_ANON_KEY" \
-            "$SUPABASE_URL/rest/v1/"
+            "$SUPABASE_URL/auth/v1/settings"
